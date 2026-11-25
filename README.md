@@ -3,8 +3,7 @@
 A web application security write-up documenting reconnaissance and login authentication testing in an authorized lab environment.
 
 > **Disclaimer:** This write-up is for educational use and authorized testing only. Do not test systems without permission.
->
-> **Public repository:** Credentials and account-specific information have been redacted from the included screenshots.
+
 
 ## Overview
 
@@ -63,8 +62,6 @@ hydra -L <user-list> \
 
 Hydra reported candidate credential pairs. Tool output should be treated as a candidate until verified manually, because an incorrect failure condition can cause false positives.
 
-Credential values are redacted in the public screenshot.
-
 ![Hydra testing](./images/pic3.png)
 
 ### 4. Login Endpoint Inspection
@@ -102,8 +99,6 @@ FFUF returned a candidate with **HTTP 200**. The result was then checked in the 
 
 The browser displayed the VulnBank dashboard after authentication. This provides evidence that the tested login was accepted in the lab environment.
 
-The account number and balance are redacted from the public screenshot.
-
 ![Authenticated dashboard](./images/pic6.png)
 
 ## Findings
@@ -124,9 +119,6 @@ The account number and balance are redacted from the public screenshot.
 - Review authentication responses to reduce user/account enumeration.
 - Validate controls using authorized testing and server-side logs.
 
-## Evidence
-
-The six screenshots are embedded in this README using relative paths from the `images/` folder. Keep the `images` folder beside this file when uploading the repository.
 
 ## Disclaimer
 
